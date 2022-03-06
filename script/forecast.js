@@ -2,7 +2,7 @@
 // For api calls we used service named acuweather
 
 // api key for accuweather
-const key ='BOPVIDVQaYsRmAfSTyTBJLZ6axNMJaiu';
+const key ='q1wJWUQDoEC6FmF7xMV9jVHKI2CTU6mU';
 
 // Location Api 
 // http://dataservice.accuweather.com/locations/v1/cities/search

@@ -21,7 +21,9 @@ cityform.addEventListener('submit',(e)=>{
        updateUi(data)
     //    console.log(data);
    }).catch(e=>{
-      alert(e);
+    alert('Please Enter the correct City Name');
+       throw new Error('Please Enter the correct City Name');
+      
    });
     // // updateCity(city)
     // .then((data) =>{
@@ -52,18 +54,21 @@ let timesource=null;
 
 if(weather.IsDayTime){
     timesource='images/day.svg';
+    document.body.style.backgroundColor="#eeedec";
 }
 else{
     timesource='images/night.svg';
+    document.body.style.backgroundColor="#000";
 }
 time.setAttribute('src', timesource);
-
 let iconSource=`images/icons/${weather.WeatherIcon}.svg`;
 icon.setAttribute('src',iconSource);
+// body.innerHTML = `style="background-color:${backgroundcolor}";`
 
 if(card.classList.contains('d-none')){
     card.classList.remove('d-none');
 }
+
 }
 // updateUi(data)
 
